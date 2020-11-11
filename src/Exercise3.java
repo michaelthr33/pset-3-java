@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Exercise3 {
     public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
-    DecimalFormat Decimal = new DecimalFormat("#.00");
+    DecimalFormat Decimal = new DecimalFormat("#.##");
     Decimal.setGroupingUsed(true);
     Decimal.setGroupingSize(3);
 
@@ -14,7 +14,7 @@ public class Exercise3 {
     double width = in.nextDouble();
     double area = (height * 25.4) * (width * 25.4);
 
-    System.out.println (Decimal.format(area) + " square millimeters");
+    System.out.println (Decimal.format(area) + " square millimeters.");
 
      in.close();
     }

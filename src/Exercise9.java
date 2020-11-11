@@ -4,8 +4,8 @@ public class Exercise9 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Amount: ");
-        double Amount = in.nextInt();
+        System.out.print("Amount : ");
+        double Amount = in.nextDouble();
         double Money = Amount * 100;
         double Quarter = Money/25;
         double QuarterChange = Money%25;
@@ -15,10 +15,10 @@ public class Exercise9 {
         double Penny = DimeChange%5;
 
 
-                System.out.println("Quarters: "+Quarter);
-                System.out.println("Dimes: "+Dime);
-                System.out.println("Nickles: "+Nickle);
-                System.out.println("Pennies: "+Penny);
+                System.out.println("Quarters : "+Quarter);
+                System.out.println("Dimes    : "+Dime);
+                System.out.println("Nickles  : "+Nickle);
+                System.out.println("Pennies  : "+Penny);
 
         in.close();
     }
